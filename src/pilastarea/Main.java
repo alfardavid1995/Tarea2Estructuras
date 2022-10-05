@@ -20,13 +20,20 @@ public class Main {
         
         trastecito = new Traste("vaso", 3);  
         miPila.push(trastecito);
+        System.out.println("AGREGA EL PRIMER ELEMENTO");
+        miPila.listar();
         
         trastecito = new Traste("plato", 2);  
         miPila.push(trastecito);
+        System.out.println("AGREGA EL SEGUNDO ELEMENTO");
+        miPila.listar();
+        
         
         trastecito = new Traste("plato", 0);  
         miPila.push(trastecito);
+        System.out.println("AGREGA EL TERCER ELEMENTO");
         miPila.listar();
+        
         
         
         /*System.out.println("PILA ANTES DEL POP");
