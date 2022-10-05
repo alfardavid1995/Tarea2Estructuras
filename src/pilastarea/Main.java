@@ -1,7 +1,9 @@
-
 package pilastarea;
-
-
+/*David Alfaro
+  Alejandro Méndez
+  Mariana Alvarez
+  Gustavo Marin
+*/
 public class Main {
 
    
@@ -26,8 +28,6 @@ public class Main {
         System.out.println("AGREGA EL TERCER ELEMENTO");
         miPila.listar();
         
-        
-       
     }
     
 }
