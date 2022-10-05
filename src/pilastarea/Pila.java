@@ -8,26 +8,26 @@ public class Pila {
         this.cima = null;
         this.largo = 0;
     }
-    
+
     public boolean Vacia(){ return cima == null;}
-    
+
     public int tamanio(){ return this.largo;}
-    
+
     public void push(Traste trastecito){
         Node newNode = new Node();
         newNode.setTrasteNodo(trastecito);
-        
+
         if (this.Vacia()){
             this.cima = newNode;
         }
-        else{  
+        else{
             newNode.setSiguiente(this.cima);
             this.cima = newNode;
             acomodarCubiertos();
         }
         this.largo++;
     }
-    
+
     public void pop(){
         if (!Vacia()) {
             // Asigna como primer node al siguiente de la pila.
@@ -36,14 +36,15 @@ public class Pila {
             this.largo--;
         }
     }
-    
-    public void acomodarCubiertos(){ 
-            cima.getTrasteNodo().setCantidadCubiertos
+
+    public void acomodarCubiertos(){
+        cima.getTrasteNodo().setCantidadCubiertos
                 (cima.getTrasteNodo().getCantidadCubiertos()
-                +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
-            cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
+                        +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
+        cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
-    
+
+
     /*
     public boolean search(int reference) {
         // Crea una copia de la pila.
@@ -66,8 +67,7 @@ public class Pila {
         return exist;
     }
     */
-    
-    
+
     /*
         public void popModificado(int reference){
         // Consulta si el value exist en la pila.
