@@ -8,7 +8,6 @@ public class Pila {
         this.cima = null;
         this.largo = 0;
     }
-
     public boolean Vacia(){ return cima == null;}
 
     public int tamanio(){ return this.largo;}
@@ -44,7 +43,6 @@ public class Pila {
                         +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
         cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
-
     /*
     public boolean search(int reference) {
         // Crea una copia de la pila.
