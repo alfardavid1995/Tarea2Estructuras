@@ -43,6 +43,7 @@ public class Pila {
                         +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
         cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
+
     /*
     public boolean search(int reference) {
         // Crea una copia de la pila.
