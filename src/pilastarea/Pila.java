@@ -28,6 +28,7 @@ public class Pila {
         this.largo++;
     }
 
+    //Metodo para eliminar un node
     public void pop(){
         if (!Vacia()) {
             // Asigna como primer node al siguiente de la pila.
@@ -43,7 +44,6 @@ public class Pila {
                         +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
         cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
-
 
     /*
     public boolean search(int reference) {
