@@ -46,7 +46,9 @@ public class Pila {
     }
     
     public void acomodarCubiertos(){ 
-            cima.getTrasteNodo().setCantidadCubiertos(cima.getTrasteNodo().getCantidadCubiertos()+cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
+            cima.getTrasteNodo().setCantidadCubiertos
+                (cima.getTrasteNodo().getCantidadCubiertos()
+                +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
             cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
     

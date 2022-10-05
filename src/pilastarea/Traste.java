@@ -38,7 +38,8 @@ public class Traste {
 
     @Override
     public String toString() {
-        return "Traste{" + "tipotraste=" + tipotraste + ", cantidadCubiertos=" + cantidadCubiertos + '}';
+        return "Traste{" + "tipotraste=" + tipotraste 
+                + ", cantidadCubiertos=" + cantidadCubiertos + '}';
     }
     
     
